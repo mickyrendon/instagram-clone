@@ -1,0 +1,209 @@
+:root{
+    --primary-btn:#b2dffc;
+    --input-bck:  #fafafa;
+    --text-color-gray: #8e8e8e;
+    --text-color-black:#262626;
+    --lg: 1.3rem;
+    --sm: 1.2rem;
+}
+/* gral rules */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: "Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-size: var(--lg);
+    background-color:#fafafa;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/* shared rules */
+main, main section, .logo-ctr, form, .line-ctr, .facebook-btn, .app-stores-ctr, .btns-ctr, footer, .links-ctr{
+    display:flex;
+    justify-content: center;
+}
+main, main > section, form{
+    flex-flow: column nowrap;
+}
+main, .register-ctr, .app-stores-ctr{
+    padding: 2rem 4rem;
+    width: 100%;
+}
+main, .register-ctr{
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+}
+/*  */
+.big-ctr{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+.main-ctr{
+    width: 37.5rem;
+    display: grid;
+}
+aside{
+    display: none;
+}
+main{
+    border-bottom: none;
+}
+.register-ctr{
+    border-top: none;
+}
+main section{
+    width: 100%;
+}
+.form-ctr{
+    gap: 1.5rem;
+}
+.logo-ctr{
+    margin: 3rem 0 1.5rem;
+}
+.logo-ctr img{
+    width: 17.5rem;
+}
+.form label{
+    margin-bottom: 1rem;
+}
+.form label input{
+    padding: 0.2rem 0.7rem;
+    width: 100%;
+    height: 3.8rem;
+    color: var(--text-color-gray);
+    background: var(--input-bck);
+    border-radius: 0.3rem;
+    border: 1px solid #dbdbdb;
+}
+form label .submit{
+    margin-top: 0.5rem;
+    font-weight: bold;
+    background-color: var(--primary-btn);
+    color: #f7fcff;
+    border: none;
+}
+/* active btn */
+form label .active{
+    background-color: #0095f6;
+}
+.line-ctr{
+    margin: 0 0 1rem;
+    height: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--text-color-gray) ;
+    font-size: var(--lg);
+}
+.line{
+    width: 40%;
+    height: 0.1rem;
+    background-color: #dbdbdb;
+}
+.facebook-btn{
+    align-items: center;
+    font-size: var(--lg);
+    font-weight:900;
+    color: #385185;
+    background: none;
+    border: none;
+}
+.facebook-btn svg{
+    margin-right: 0.5rem;
+}
+.forgot-pswrd{
+    text-align: center;
+}
+.register-ctr{
+    font-size: var(--lg);
+    text-align: center;
+}
+.register-ctr a{
+    color: #0095f6;
+}
+.app-stores-ctr{
+    padding: 2rem ;
+    flex-direction: column;
+}
+.app-stores-ctr span{
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.btns-ctr{
+    justify-content: space-between;
+}
+.btns-ctr > button{
+    line-height: 1;
+    border: none;
+}
+.btns-ctr button img{
+    width: 13.6rem;
+    height: 4rem;
+}
+footer{
+    padding: 0 1.6rem;
+    flex-direction: column;
+    text-align: center;
+}   
+.links-ctr{
+    width: 100%;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+.links-ctr li{
+    width: auto;
+    margin: 0.5rem;
+}
+.links-ctr li a{
+    color: var(--text-color-gray);
+}
+footer .links-ctr:nth-child(2), footer .links-ctr:last-child{
+    justify-content: center;
+    font-size: var(--lg);
+}
+footer .links-ctr:last-child{
+    margin-top: 2rem;
+    height: 10rem;
+    gap: 2rem;
+    color: var(--text-color-gray);
+}
+footer .links-ctr:last-child select{
+    height: 2rem;
+    background: none;
+    border: none;
+    color: var(--text-color-gray);
+}
+/* mediaquerie */
+@media (min-width: 450px) {
+   .big-ctr{
+    padding-top: 3rem;
+    width: 100%;
+   }
+   .main-ctr{
+    gap: 1rem;
+   }
+   main, .register-ctr{
+    border: 1px solid #dbdbdb;
+   }
+}
+
+@media (min-width: 600px) {
+    aside{
+        display: flex;
+    }
+}
