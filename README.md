@@ -6,4 +6,4 @@ instagram clone - webDev portfolio - Platzi challenge
 #Platzi challenge web dev portfolio
 
 check it out here
-[instagram login clone]()
+[instagram login clone](https://mickyrendon.github.io/instagram-clone/)
