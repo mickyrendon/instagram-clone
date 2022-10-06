@@ -9,7 +9,6 @@ form.addEventListener('submit', (e) => {
 function validator(){
     let val = pswrd.value
     if(val.length >= 6 ){
-        console.log('more then 3')
         pswrd.addEventListener('keyup', validator, false)
         return btn.classList.add('active')
     }else{
@@ -18,6 +17,7 @@ function validator(){
     }
 }
 validator()
+
 
 
 
